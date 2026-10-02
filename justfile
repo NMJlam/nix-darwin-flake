@@ -14,7 +14,7 @@ install-nix:
         exit 0
     fi
     curl --proto '=https' --tlsv1.2 -sSfL -o /tmp/install-nix https://nixos.org/nix/install
-    sh /tmp/install-nix --daemon
+    sh /tmp/install-nix --daemon --yes
     rm /tmp/install-nix
 
 # First nix-darwin activation
